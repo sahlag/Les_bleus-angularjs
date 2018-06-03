@@ -1,8 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <div class="card-panel teal lighten-5">
   <h1>
     {{ title }}
   </h1>
+  </div>
   <img width="700" alt="image equipe de france 2018" src="./assets/bleus.jpg">
 </div>
-<h2>Allez les bleus !</h2>
+
+  <div class="card-panel teal lighten-5">
+      <h2>Encouragez les bleus</h2>
+      <p [attr.contenteditable]="isEditable">{{ message }}</p>
+  </div>
+
+
+<div class="row center">
+<button  class="btn-large" (click)="changeStyle()" >Postez votre message</button>
+</div>
+<app-players-list></app-players-list>
